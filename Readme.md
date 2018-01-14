@@ -44,6 +44,50 @@ By default, python runs on [localhost:8000](http://localhost:8000).
 
 ### List the Plugins
 
+#### Request
+
+    GET http://localhost:8000/plugins?format=json
+    
+#### Response
+    
+```json
+{
+    "result": {
+        "plugins": [
+            {
+                "name": "Romanian Flag",
+                "id": 0,
+                "url": "http://localhost:8100/turing.machine/romanian-flag",
+                "type": "enigma",
+                "creation": "2018-01-13 03:14:15.926536",
+                "last-edit": "2018-01-14 00:30:10.299956"
+            },
+            {
+                "name": "Phone",
+                "id": 1,
+                "url": "http://localhost:8200/device/phone",
+                "type": "device",
+                "creation": "2018-01-14 00:30:10.299956",
+                "last-edit": "2018-01-14 00:30:10.299956"
+            },
+            {
+                "name": "LFA",
+                "id": 2,
+                "url": "http://localhost:8300/lfa",
+                "type": "theme",
+                "creation": "2018-01-01 23:14:06.926328",
+                "last-edit": "2018-01-14 00:30:10.299956"
+            }
+        ]
+    },
+    "metadata": {
+        "call": "GET http://localhost:8000/plugins?format=json",
+        "date": "2018-01-14 03:32:19.280948",
+        "version": 1
+    }
+}
+```
+
 ### Search a Plugin
 
 ### Create a Plugin
